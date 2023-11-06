@@ -1,0 +1,2 @@
+require("gabe")
+print("hello")
