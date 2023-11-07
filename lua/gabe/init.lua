@@ -1,3 +1,3 @@
-require("gabe.packer")
-require("gabe.remap")
 require("gabe.set")
+require("gabe.remap")
+require("gabe.packer")
