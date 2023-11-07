@@ -29,4 +29,24 @@ return require('packer').startup(function(use)
 
 	-- Fugitive
 	use "tpope/vim-fugitive"
+
+	-- LSP zero
+	use {
+		'VonHeikemen/lsp-zero.nvim',
+		branch = 'v3.x',
+		requires = {
+			-- LSP Support
+			{'neovim/nvim-lspconfig'},
+			-- Autocompletion
+			{'hrsh7th/nvim-cmp'},
+			{'hrsh7th/cmp-nvim-lsp'},
+			{'L3MON4D3/LuaSnip'},
+		}
+	}
+
+	use {
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+	}
+	
 end)
