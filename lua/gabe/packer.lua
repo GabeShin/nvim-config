@@ -35,7 +35,7 @@ return require('packer').startup(function(use)
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
 		requires = {
-			-- LSP Support
+			-- LSP 
 			{'neovim/nvim-lspconfig'},
 			-- Autocompletion
 			{'hrsh7th/nvim-cmp'},

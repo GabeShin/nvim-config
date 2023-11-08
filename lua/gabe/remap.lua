@@ -32,7 +32,6 @@ vim.keymap.set("n", "<leader><Right>", "<C-i>")
 
 vim.keymap.set("n", "<leader><leader>", function()
     vim.cmd("w")
-    vim.cmd("so")
 end)
 
 -- pane navigation
