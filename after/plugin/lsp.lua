@@ -14,6 +14,22 @@ require('mason-lspconfig').setup({
 	}
 })
 
+local cmp = require('cmp')
+cmp.setup({
+    window = {
+        completion = cmp.config.window.bordered(),
+        documentation = cmp.config.window.bordered(),
+    },
+    mapping = cmp.mapping.preset.insert({
+        ['<C-p>'] = cmp.mapping.select_prev_item(cmp_select),
+        ['<C-n>'] = cmp.mapping.select_next_item(cmp_select),
+        ['<C-y>'] = cmp.mapping.confirm({ select = true }),
+        ["<C-Space>"] = cmp.mapping.complete(), 
+        ["<Tab>"] = cmp.mapping.confirm({ select = true}),
+        ["<S-Tab>"] = nil,
+    }) 
+})
+
 lsp.set_preferences({
     suggest_lsp_servers = false,
     sign_icons = {
