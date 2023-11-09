@@ -1,5 +1,3 @@
--- luacheck: globals vim
-
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- move highlighted in visual mode
