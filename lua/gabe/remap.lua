@@ -30,7 +30,6 @@ vim.keymap.set("n", "<leader><Left>", "<C-o>")
 vim.keymap.set("n", "<leader><Right>", "<C-i>")
 
 vim.keymap.set("n", "<leader><leader>", function()
-    vim.lsp.buf.format()
     vim.cmd("w")
 end)
 

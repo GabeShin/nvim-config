@@ -1,19 +1,57 @@
 local lsp = require("lsp-zero")
 
 lsp.preset("recommended")
-
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
 end)
 
-require('mason').setup({})
-require('mason-lspconfig').setup({
-    ensure_installed = { 'tsserver', 'rust_analyzer', 'lua_ls' },
+local mason = require('mason')
+local mason_lspconfig = require('mason-lspconfig');
+local mason_tool_installer = require("mason-tool-installer")
+
+-- Set up Icons
+mason.setup({
+    ui = {
+        icons = {
+            package_installed = "✓",
+            package_pending = "➜",
+            package_uninstalled = "✗",
+        },
+    }
+})
+
+-- List of LSP to install
+mason_lspconfig.setup({
+    ensure_installed = {
+        'tsserver',
+        'rust_analyzer',
+        'lua_ls',
+        'html',
+        'cssls',
+        'tailwindcss',
+        'graphql',
+        'prismals',
+        'pyright',
+    },
+    automatic_installation = true,
     handlers = {
         lsp.default_setup,
     }
 })
 
+-- List of Formatters/Linters to install
+mason_tool_installer.setup({
+    ensure_installed = {
+        "prettier",
+        "stylua",
+        "isort",
+        "black",
+        "pylint",
+        "eslint_d",
+    },
+})
+
+-- LSP config setup
 require("lspconfig").lua_ls.setup {
     settings = {
         Lua = {
@@ -50,7 +88,6 @@ lsp.set_preferences({
 
 lsp.on_attach(function(client, bufnr)
     local opts = { buffer = bufnr, remap = false }
-
     -- go to definition
     vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
     -- show all references

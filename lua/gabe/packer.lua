@@ -9,21 +9,20 @@ return require("packer").startup(function(use)
 
     use {
         "nvim-telescope/telescope.nvim", tag = "0.1.4",
-        -- or                            , branch = "0.1.x",
         requires = { { "nvim-lua/plenary.nvim" } }
     }
 
     -- Color Scheme - kanagawa
     use "rebelot/kanagawa.nvim"
-    vim.cmd("colorscheme kanagawa")
 
     -- Treesitter
     use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
     -- Harpoon
-    use "nvim-lua/plenary.nvim"
-    use "ThePrimeagen/harpoon"
-
+    use {
+        "ThePrimeagen/harpoon",
+        requires = { { "nvim-lua/plenary.nvim" } }
+    }
     -- Undotree
     use "mbbill/undotree"
 
@@ -46,13 +45,18 @@ return require("packer").startup(function(use)
 
     use {
         "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim",
+        requires = {
+            { "williamboman/mason-lspconfig.nvim" },
+            { "WhoIsSethDaniel/mason-tool-installer.nvim" }
+        }
     }
 
+    -- Github Copilot
     use "github/copilot.vim"
 
-    use {
-        "SirVer/ultisnips",
-        "mlaursen/vim-react-snippets"
-    }
+    -- Formatter
+    use "stevearc/conform.nvim"
+
+    -- Linter
+    use "mfussenegger/nvim-lint"
 end)

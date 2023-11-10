@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["conform.nvim"] = {
+    loaded = true,
+    path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/conform.nvim",
+    url = "https://github.com/stevearc/conform.nvim"
+  },
   ["copilot.vim"] = {
     loaded = true,
     path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/copilot.vim",
@@ -109,6 +114,11 @@ _G.packer_plugins = {
     path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/mason-lspconfig.nvim",
     url = "https://github.com/williamboman/mason-lspconfig.nvim"
   },
+  ["mason-tool-installer.nvim"] = {
+    loaded = true,
+    path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/mason-tool-installer.nvim",
+    url = "https://github.com/WhoIsSethDaniel/mason-tool-installer.nvim"
+  },
   ["mason.nvim"] = {
     loaded = true,
     path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/mason.nvim",
@@ -118,6 +128,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-lint"] = {
+    loaded = true,
+    path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/nvim-lint",
+    url = "https://github.com/mfussenegger/nvim-lint"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -144,11 +159,6 @@ _G.packer_plugins = {
     path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ultisnips = {
-    loaded = true,
-    path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/ultisnips",
-    url = "https://github.com/SirVer/ultisnips"
-  },
   undotree = {
     loaded = true,
     path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/undotree",
@@ -158,11 +168,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
-  },
-  ["vim-react-snippets"] = {
-    loaded = true,
-    path = "/Users/vc-mac/.local/share/nvim/site/pack/packer/start/vim-react-snippets",
-    url = "https://github.com/mlaursen/vim-react-snippets"
   }
 }
 
