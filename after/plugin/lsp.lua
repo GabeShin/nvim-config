@@ -34,8 +34,6 @@ cmp.setup({
     },
     mapping = cmp.mapping.preset.insert({
         ["<C-Space>"] = cmp.mapping.complete(),
-        ["<Tab>"] = cmp.mapping.confirm({ select = true }),
-        ["<S-Tab>"] = nil,
         ["<CR>"] = cmp.mapping.confirm({ select = true }),
     })
 })
