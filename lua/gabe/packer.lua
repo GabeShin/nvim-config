@@ -64,4 +64,7 @@ return require("packer").startup(function(use)
 	-- Vim Tree
 	use("nvim-tree/nvim-tree.lua")
 	use("nvim-tree/nvim-web-devicons")
+
+	-- Ollama Integration
+	use("David-Kunz/gen.nvim")
 end)
