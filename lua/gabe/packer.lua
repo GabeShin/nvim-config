@@ -62,8 +62,13 @@ return require("packer").startup(function(use)
 	use("mfussenegger/nvim-lint")
 
 	-- Vim Tree
-	use("nvim-tree/nvim-tree.lua")
-	use("nvim-tree/nvim-web-devicons")
+	use({
+		"nvim-tree/nvim-tree.lua",
+		requires = {
+			{ "nvim-tree/nvim-web-devicons" },
+			{ "echasnovski/mini.base16" },
+		},
+	})
 
 	-- Ollama Integration
 	use("David-Kunz/gen.nvim")
