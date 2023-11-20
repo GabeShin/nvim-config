@@ -72,4 +72,7 @@ return require("packer").startup(function(use)
 
 	-- Ollama Integration
 	use("David-Kunz/gen.nvim")
+
+	-- Color Preview
+	use("norcalli/nvim-colorizer.lua")
 end)
