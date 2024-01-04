@@ -30,22 +30,17 @@ vim.keymap.set("n", "<leader><Left>", "<C-o>")
 vim.keymap.set("n", "<leader><Right>", "<C-i>")
 
 vim.keymap.set("n", "<leader><leader>", function()
-    vim.cmd("w")
+	vim.cmd("w")
 end)
 
 -- pane navigation
 local opts = { silent = true }
 
-vim.keymap.set("n", "<S-Space>l", "<C-w>l", opts)
-vim.keymap.set("n", "<S-Space>h", "<C-w>h", opts)
-vim.keymap.set("n", "<S-Space>j", "<C-w>j", opts)
-vim.keymap.set("n", "<S-Space>k", "<C-w>k", opts)
+vim.keymap.set("n", "<C-w><Left>", "<C-w>h", opts)
+vim.keymap.set("n", "<C-w><Down>", "<C-w>j", opts)
+vim.keymap.set("n", "<C-w><Up>", "<C-w>k", opts)
+vim.keymap.set("n", "<C-w><Right>", "<C-w>l", opts)
 
-vim.keymap.set("n", "<S-Space><Left>", "<C-w>h", opts)
-vim.keymap.set("n", "<S-Space><Down>", "<C-w>j", opts)
-vim.keymap.set("n", "<S-Space><Up>", "<C-w>k", opts)
-vim.keymap.set("n", "<S-Space><Right>", "<C-w>l", opts)
-
-vim.keymap.set("n", "<S-Space>v", ":vsplit<CR>", opts)
-vim.keymap.set("n", "<S-Space>s", ":split<CR>", opts)
-vim.keymap.set("n", "<S-Space>d", ":close<CR>", opts)
+vim.keymap.set("n", "<C-w>%", ":vsplit<CR>", opts)
+vim.keymap.set("n", '<C-w>"', ":split<CR>", opts)
+vim.keymap.set("n", "<C-w>X", ":close<CR>", opts)
