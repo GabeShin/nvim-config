@@ -30,6 +30,9 @@ return require("packer").startup(function(use)
 	-- Fugitive (Git)
 	use("tpope/vim-fugitive")
 
+	-- Git Sign
+	use("lewis6991/gitsigns.nvim")
+
 	-- LSP zero
 	use({
 		"VonHeikemen/lsp-zero.nvim",

@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/gen.nvim",
     url = "https://github.com/David-Kunz/gen.nvim"
   },
+  ["gitsigns.nvim"] = {
+    loaded = true,
+    path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
+    url = "https://github.com/lewis6991/gitsigns.nvim"
+  },
   ["hardtime.nvim"] = {
     loaded = true,
     path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/hardtime.nvim",
