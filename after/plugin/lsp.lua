@@ -47,7 +47,6 @@ mason_tool_installer.setup({
 		"isort",
 		"black",
 		"pylint",
-		"eslint_d",
 	},
 })
 
@@ -125,7 +124,7 @@ lsp.on_attach(function(client, bufnr)
 	end, opts)
 	-- show signature help when in insert mode
 	vim.keymap.set("i", "<C-h>", function()
-		vim.lsp.buf.signature_help()
+		vim.lsp.buf.hover()
 	end, opts)
 end)
 

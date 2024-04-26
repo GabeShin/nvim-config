@@ -75,4 +75,22 @@ return require("packer").startup(function(use)
 
 	-- Color Preview
 	use("norcalli/nvim-colorizer.lua")
+
+	-- Hard time for learning nvim
+	use({
+		"m4xshen/hardtime.nvim",
+		requires = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
+		opts = {},
+	})
+
+	use({ "christoomey/vim-tmux-navigator" })
+
+	use({ "vim-test/vim-test", requires = { "preservim/vimux" } })
+
+	use({
+		"VonHeikemen/fine-cmdline.nvim",
+		requires = {
+			{ "MunifTanjim/nui.nvim" },
+		},
+	})
 end)
