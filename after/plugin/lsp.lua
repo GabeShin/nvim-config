@@ -122,10 +122,6 @@ lsp.on_attach(function(client, bufnr)
 	vim.keymap.set("n", "<leader>rn", function()
 		vim.lsp.buf.rename()
 	end, opts)
-	-- show signature help when in insert mode
-	vim.keymap.set("i", "<C-h>", function()
-		vim.lsp.buf.hover()
-	end, opts)
 end)
 
 lsp.setup()

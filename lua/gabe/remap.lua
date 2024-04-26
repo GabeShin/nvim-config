@@ -36,10 +36,10 @@ end)
 -- pane navigation
 local opts = { silent = true }
 
-vim.keymap.set("n", "<C-w><Left>", "<C-w>h", opts)
-vim.keymap.set("n", "<C-w><Down>", "<C-w>j", opts)
-vim.keymap.set("n", "<C-w><Up>", "<C-w>k", opts)
-vim.keymap.set("n", "<C-w><Right>", "<C-w>l", opts)
+vim.keymap.set("i", "<C-h>", "<Left>")
+vim.keymap.set("i", "<C-j>", "<Down>")
+vim.keymap.set("i", "<C-k>", "<Up>")
+vim.keymap.set("i", "<C-l>", "<Right>")
 
 vim.keymap.set("n", "<C-w>%", ":vsplit<CR>", opts)
 vim.keymap.set("n", '<C-w>"', ":split<CR>", opts)
