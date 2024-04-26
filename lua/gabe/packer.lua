@@ -96,4 +96,14 @@ return require("packer").startup(function(use)
 			{ "MunifTanjim/nui.nvim" },
 		},
 	})
+
+	use({
+		"epwalsh/obsidian.nvim",
+		tag = "*", -- recommended, use latest release instead of latest commit
+		requires = {
+			"nvim-lua/plenary.nvim",
+		},
+	})
+
+	vim.opt.conceallevel = 1
 end)
