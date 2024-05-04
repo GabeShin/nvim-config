@@ -8,7 +8,7 @@ require("obsidian").setup({
 
 	notes_subdir = "0-inbox",
 	new_notes_location = "notes_subdir",
-	open_notes_in = "hsplit",
+	open_notes_in = "vsplit",
 
 	templates = {
 		subdir = "templates",
@@ -34,6 +34,20 @@ require("obsidian").setup({
 				return require("obsidian").util.gf_passthrough()
 			end,
 			opts = { noremap = false, expr = true, buffer = true },
+		},
+		-- Toggle check-boxes.
+		["<leader>ch"] = {
+			action = function()
+				return require("obsidian").util.toggle_checkbox()
+			end,
+			opts = { buffer = true },
+		},
+		-- Smart action depending on context, either follow link or toggle checkbox.
+		["<cr>"] = {
+			action = function()
+				return require("obsidian").util.smart_action()
+			end,
+			opts = { buffer = true, expr = true },
 		},
 	},
 	note_id_func = function(title)
