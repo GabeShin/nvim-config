@@ -104,6 +104,8 @@ return require("packer").startup(function(use)
 			"nvim-lua/plenary.nvim",
 		},
 	})
-
+	-- required by obsidian.nvim
 	vim.opt.conceallevel = 1
+
+	use({ "cohama/lexima.vim" })
 end)

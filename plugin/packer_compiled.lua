@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
     url = "https://github.com/rebelot/kanagawa.nvim"
   },
+  ["lexima.vim"] = {
+    loaded = true,
+    path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/lexima.vim",
+    url = "https://github.com/cohama/lexima.vim"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
