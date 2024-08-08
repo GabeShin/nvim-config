@@ -76,16 +76,6 @@ return require("packer").startup(function(use)
 	-- Ollama Integration
 	use("David-Kunz/gen.nvim")
 
-	-- Color Preview
-	use("norcalli/nvim-colorizer.lua")
-
-	-- Hard time for learning nvim
-	use({
-		"m4xshen/hardtime.nvim",
-		requires = { "MunifTanjim/nui.nvim", "nvim-lua/plenary.nvim" },
-		opts = {},
-	})
-
 	use({ "christoomey/vim-tmux-navigator" })
 
 	use({ "vim-test/vim-test", requires = { "preservim/vimux" } })
@@ -107,5 +97,6 @@ return require("packer").startup(function(use)
 	-- required by obsidian.nvim
 	vim.opt.conceallevel = 1
 
+	-- auto parentheses
 	use({ "cohama/lexima.vim" })
 end)
