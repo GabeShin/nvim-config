@@ -1,2 +1,2 @@
 require("gabe.core")
-require ("gabe.lazy")
+require("gabe.lazy")
