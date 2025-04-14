@@ -43,5 +43,13 @@ keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 -- navigation helpers
 keymap.set("n", "<leader>j", "<C-d>zz")
 keymap.set("n", "<leader>k", "<C-u>zz")
+keymap.set("n", "<leader>h", "<cmd>bp<CR>", { desc = "Go to previous buffer" }) -- go to previous buffer
+keymap.set("n", "<leader>l", "<cmd>bn<CR>", { desc = "Go to next buffer" }) -- go to next buffer
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
+
+-- tmux navigation
+keymap.set("n", "C-h", ":TmuxNavigateLeft<CR>")
+keymap.set("n", "C-j", ":TmuxNavigateDown<CR>")
+keymap.set("n", "C-k", ":TmuxNavigateUp<CR>")
+keymap.set("n", "C-l", ":TmuxNavigateRight<CR>")
