@@ -159,6 +159,16 @@ _G.packer_plugins = {
     path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-python"] = {
+    loaded = true,
+    path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/nvim-dap-python",
+    url = "https://github.com/mfussenegger/nvim-dap-python"
+  },
   ["nvim-lint"] = {
     loaded = true,
     path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/nvim-lint",
@@ -208,6 +218,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
+  },
+  ["venv-selector.nvim"] = {
+    loaded = true,
+    path = "/Users/gabe/.local/share/nvim/site/pack/packer/start/venv-selector.nvim",
+    url = "https://github.com/linux-cultist/venv-selector.nvim"
   },
   ["vim-fugitive"] = {
     loaded = true,

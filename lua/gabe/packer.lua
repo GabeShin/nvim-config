@@ -99,4 +99,15 @@ return require("packer").startup(function(use)
 
 	-- auto parentheses
 	use({ "cohama/lexima.vim" })
+
+	-- python venv selector
+	use({
+		"linux-cultist/venv-selector.nvim",
+		branch = "regexp",
+		requires = {
+			"neovim/nvim-lspconfig",
+			"mfussenegger/nvim-dap",
+			"mfussenegger/nvim-dap-python", --optional
+		},
+	})
 end)
