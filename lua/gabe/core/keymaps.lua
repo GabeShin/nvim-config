@@ -46,7 +46,11 @@ keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 
 -- tmux navigation
-keymap.set("n", "C-h", ":TmuxNavigateLeft<CR>")
-keymap.set("n", "C-j", ":TmuxNavigateDown<CR>")
-keymap.set("n", "C-k", ":TmuxNavigateUp<CR>")
-keymap.set("n", "C-l", ":TmuxNavigateRight<CR>")
+keymap.set("n", "<C-h>", ":TmuxNavigateLeft<CR>")
+keymap.set("n", "<C-j>", ":TmuxNavigateDown<CR>")
+keymap.set("n", "<C-k>", ":TmuxNavigateUp<CR>")
+keymap.set("n", "<C-l>", ":TmuxNavigateRight<CR>")
+
+-- quickfix navigation
+keymap.set("n", "[q", ":cnext<CR>")
+keymap.set("n", "]q", ":cprev<CR>")
