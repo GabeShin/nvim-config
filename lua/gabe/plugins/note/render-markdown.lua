@@ -57,6 +57,7 @@ return {
 			right_pad = 4,
 			border = "thick",
 		},
+		checkbox = { checked = { scope_highlight = "@markup.strikethrough" } },
 	},
 	config = function(_, opts)
 		-- Headings
